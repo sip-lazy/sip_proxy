@@ -34,8 +34,6 @@ bash
 
 ./build.sh
 
-Use code with caution.
-
 ### 4. Configuration (.env)
 
 Configure your authorized web phone extensions by editing the USERS section inside your .env file: 
@@ -44,7 +42,6 @@ env
 
 USERS=username:password,user2:pass2
 
-Use code with caution.
 
 ### 5. Run the Proxy
 
@@ -54,7 +51,6 @@ bash
 
 ./start.sh
 
-Use code with caution.
 
 ### Web Phone Configuration (Important Note on NAT Traversal)
 
@@ -68,7 +64,6 @@ javascript
 
 iceServers: [{ urls: 'stun:stun.l.google.com:19302' }]
 
-Use code with caution.
 * Strict/Mobile Networks (CGNAT): A dedicated TURN server is required. This proxy has been fully tested using an eturnal TURN server setup: 
 
 javascript
@@ -82,7 +77,6 @@ iceServers: [
   }
 ]
 
-Use code with caution.
 
 ### Credits & License
 

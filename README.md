@@ -61,20 +61,13 @@ When configuring your web phone instance (such as a JsSIP client), ensure your p
 
 javascript
 
-iceServers: [{ urls: 'stun:stun.l.google.com:19302' }]
+"iceServers": [{ "urls": "stun:stun.l.google.com:19302" }]
 
 * Strict/Mobile Networks (CGNAT): A dedicated TURN server is required. This proxy has been fully tested using an eturnal TURN server setup: 
 
 javascript
 
-iceServers: [
-  { urls: 'stun:stun.your-eturnal-server.com:3478' },
-  { 
-    urls: 'turn:turn.your-eturnal-server.com:3478', 
-    username: 'your_turn_user', 
-    credential: 'your_turn_password' 
-  }
-]
+"iceServers": [{ "urls": "turn:your-eturnal-server.com:3478", "username": "your_turn_user", "credential": "your_turn_password" }]
 
 
 ### Credits & License

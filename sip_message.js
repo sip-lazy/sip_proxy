@@ -1,10 +1,8 @@
 import { Grammar } from './grammar.js';
 
 /**
-      SIP message  
-      It's modified sip_message.js from JsSIP project.
-      Copyright (c) 2012-2015 José Luis Millán - Versatica <https://github.com/versatica/>
-      License: The MIT License
+    SIP message parser and generator.
+    Utilizing the SIP message structure and grammar parser mechanics from the JsSIP project.
  */
 class SipMessage {
     constructor() {

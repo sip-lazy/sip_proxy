@@ -38,9 +38,8 @@ bash
 
 Configure your authorized web phone extensions by editing the USERS section inside your .env file: 
 
-env
 
-USERS=username:password,user2:pass2
+USERS=username1 password1, username2 password2
 
 
 ### 5. Run the Proxy

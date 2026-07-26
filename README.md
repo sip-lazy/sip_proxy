@@ -53,21 +53,24 @@ bash
 
 ### Web Phone Configuration (Important Note on NAT Traversal)
 
-While the proxy handles the signaling, NAT traversal must be configured on your WebRTC web phone client. Because mobile providers and home routers use Carrier-Grade NAT (CGNAT) or symmetric NAT, your web phone client needs access to STUN/TURN servers to establish audio/video media paths. 
+While the proxy handles the signaling, NAT traversal must be configured on your WebRTC web phone client. 
+Your web phone client needs access to STUN/TURN servers to establish audio/video media paths. 
 
 When configuring your web phone instance (such as a JsSIP client), ensure your pcConfig (RTCConfiguration) includes appropriate ICE servers: 
 
-* Standard Networks: A free public STUN server is usually enough: 
+* Standard Networks. A free public STUN server is usually enough: 
 
 javascript
 
 "iceServers": [{ "urls": "stun:stun.l.google.com:19302" }]
 
-* Strict/Mobile Networks (CGNAT): A dedicated TURN server is required. This proxy has been fully tested using an eturnal TURN server setup: 
+* Strict/Mobile Networks (CGNAT): A dedicated TURN server is required.
+  This proxy has been tested using an [eturnal](https://eturnal.net) TURN server setup: 
 
 javascript
 
 "iceServers": [{ "urls": "turn:your-eturnal-server.com:3478", "username": "your_turn_user", "credential": "your_turn_password" }]
+
 
 
 ### Credits & License
